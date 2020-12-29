@@ -1,22 +1,22 @@
 void main() {
-  List<String> componants = [];
-  List <dynamic> laptop = [];
+  List<String> result = [];
+  List <dynamic> aval = [];
 
-  laptop.add(Trounoir<Spotnic>(Spotnic()));
-  laptop.add(Trounoir<Astra>(Astra()));
-  laptop.forEach((i) {
-    componants.add('${i.getoption().runtimeType} ${i.getoption().alert()}');
+  aval.add(Trounoir<Spotnic>(Spotnic()));
+  aval.add(Trounoir<Astra>(Astra()));
+  aval.forEach((i) {
+    result.add('${i.getoption().runtimeType} ${i.getoption().alert()}');
   });
 
 
-  print('NASA Recepteur :$componants');
+  print('NASA Recepteur :$result');
 }
 
-abstract class  Convention{ String alert();}
+abstract class  Security{ String alert();}
 
-class Spotnic implements Convention {  String alert() => '(SOS 007 )';}
+class Spotnic implements Security {  String alert() => '(SOS 007 )';}
 
-class Astra implements Convention {  String alert() => '(SOS 011)';}
+class Astra implements Security {  String alert() => '(SOS 011)';}
 
 class Trounoir<T> {
   final T p;
