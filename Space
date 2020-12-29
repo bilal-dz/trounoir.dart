@@ -20,6 +20,6 @@ class Astra implements Security {  String alert() => '(SOS 011)';}
 
 class Trounoir<T> {
   final T p;
-  Trounoir(T this.p) { print(' info : $p have been pulled ');  }
+  Trounoir(T this.p) { print(' Trou Noir: $p have been pulled  :) ');  }
   T getoption() {  return p;  }
 }
